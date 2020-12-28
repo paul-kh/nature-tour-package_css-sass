@@ -1,0 +1,19 @@
+// GLOBAL RESET
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; /* force the property 'box-sizing' to be inherited for all elements including the pseudo elements ('::after' & '::before') */
+}
+
+// Define the root font size so we can relatively use 'rem' unit
+// for property values of all elements to achieve the responsiveness
+// of our web site in case user would change browser font size
+html {
+  font-size: 62.5%; //define 1rem = 10px or 62.5% of the root font size 16px
+}
+
+body {
+  box-sizing: border-box;
+}
