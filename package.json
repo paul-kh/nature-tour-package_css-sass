@@ -1,7 +1,7 @@
 {
-  "name": "portfolio-redesign",
+  "name": "A tour website",
   "version": "1.0.0",
-  "description": "Redesign portfolio using Sass",
+  "description": "A tour website using Sass",
   "main": "index.js",
   "scripts": {
     "compile:sass": "node-sass sass/main.scss assets/css/style.css -w"
@@ -11,11 +11,6 @@
     "url": "git+https://github.com/paul-kh/portfolio-redesign.git"
   },
   "author": "Paul Chheang",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/paul-kh/portfolio-redesign/issues"
-  },
-  "homepage": "https://github.com/paul-kh/portfolio-redesign#readme",
   "dependencies": {},
   "devDependencies": {
     "node-sass": "^5.0.0"
