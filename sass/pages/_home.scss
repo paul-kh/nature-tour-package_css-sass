@@ -14,6 +14,7 @@
     url("../images/nat-4.jpg");
   background-size: cover;
   transform: skewY(-7deg);
+
   & > * {
     // direct child seletor to make 'feature-box' to skew back 7 degree
     transform: skewY(7deg);
@@ -42,7 +43,6 @@
 }
 
 .book {
-  height: 50rem;
   background-image: linear-gradient(
       105deg,
       (rgba($color-white, 0.8) 0%),
@@ -50,7 +50,7 @@
       transparent 50%
     ),
     url("../images/nat-10.jpg");
-  background-size: cover;
+  background-size: 100%;
   border-radius: 3px;
   box-shadow: 0 1rem 2rem rgba($color-black, 0.5);
 

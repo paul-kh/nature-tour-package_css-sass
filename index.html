@@ -12,45 +12,53 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
+    <div class="navigation">
+      <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+
+      <label for="navi-toggle" class="navigation__button">
+        <span class="navigation__icon">&nbsp;</span>
+      </label>
+
+      <div class="navigation__background" id="nav-bg">&nbsp;</div>
+
+      <nav class="navigation__nav" id="nav">
+        <ul class="navigation__list">
+          <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span>About Natours</a></li>
+          <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span>Your benifits</a></li>
+          <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span>POpular Tours</a></li>
+          <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span>Stories</a></li>
+          <li class="navigation__item"><a href="#section-book" class="navigation__link"><span>05</span>Book Now</a></li>
+        </ul>
+      </nav>
+    </div>
     <header class="header">
       <div class="header__logo-box">
-        <h1 class="header__logo">
-          <span class="first-name">Paul</span>
-          <span class="last-name">Chheang</span>
-        </h1>
+        <img src="./assets/images/logo-white.png" alt="Logo" class="header__logo">
       </div>
+
       <div class="header__text-box">
         <h1 class="heading-primary">
-          <span class="heading-primary--main">Full-Stack Web Developer</span>
-          <span class="heading-primary--sub">all day I dream about coding</span>
+            <span class="heading-primary--main">Outdoors</span>
+            <span class="heading-primary--sub">is where life happens</span>
         </h1>
-        <a href="#" class="btn btn--white btn--animated">More About Me</a>
+
+        <a href="#section-tours" class="btn btn--white btn--animated">Discover our tours</a>
       </div>
     </header>
 
     <main>
       <section class="section-about">
         <div class="u-center-text u-margin-bottom-big">
-          <h2 class="heading-secondary">Developer Passionate About Better</h2>
+          <h2 class="heading-secondary">Exciting tours for adventurous people</h2>
         </div>
 
         <div class="row">
           <div class="col-1-of-2">
-            <h3 class="heading-tertiary u-margin-bottom-small">About Me</h3>
-            <p class="paragraph">
-              Full-Stack Web Developer leveraging a background in product
-              development and IT support to build web app to solve business
-              problems and simplify the complex to make sense and
-              user-friendliness for everyone. I dreamed about expanding my
-              ability to code and to become a broader-scope problem solver.
-            </p>
+            <h3 class="heading-tertiary u-margin-bottom-small">YOU'RE GOING TO FALL IN LOVE WITH NATURE</h3>
 
-            <h3 class="heading-tertiary u-margin-bottom-small">
-              Technologies Used
-            </h3>
             <p class="paragraph">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Asperiores nulla deserunt voluptatum nam.
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate, neque? Dolores ipsam odio, expedita delectus incidunt ullam fugit, illum corrupti perspiciatis amet dolore iusto, quisquam fuga a laborum laudantium sapiente.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque sit temporibus similique sapiente natus eius ratione ea, blanditiis nisi saepe exercitationem tenetur a animi facilis corporis mollitia iste voluptate dolor.
             </p>
 
             <a href="#" class="btn-text">Learn more &rarr;</a>
@@ -120,7 +128,7 @@
         </div class="row">
       </section>
 
-      <section class="section-tours">
+      <section class="section-tours" id="section-tours">
         <div class="u-center-text u-margin-bottom-big">
           <h2 class="heading-secondary">Most Popular Tours</h2>
         </div>
@@ -154,7 +162,7 @@
                     <p class="card__price-only"> Only </p>
                     <p class="card__price-value">$297</p>
                   </div>
-                  <a href="" class="btn btn--white">Book Now!</a>
+                  <a href="#popup" class="btn btn--white">Book Now!</a>
                 </div>
               </div>
             </div>
@@ -188,7 +196,7 @@
                     <p class="card__price-only"> Only </p>
                     <p class="card__price-value">$497</p>
                   </div>
-                  <a href="" class="btn btn--white">Book Now!</a>
+                  <a href="#popup" class="btn btn--white">Book Now!</a>
                 </div>
               </div>
 
@@ -222,7 +230,7 @@
                     <p class="card__price-only"> Only </p>
                     <p class="card__price-value">$897</p>
                   </div>
-                  <a href="" class="btn btn--white">Book Now!</a>
+                  <a href="#popup" class="btn btn--white">Book Now!</a>
                 </div>
               </div>
             </div>
@@ -230,7 +238,7 @@
         </div>
 
         <div class="u-center-text u-margin-top-huge">
-          <a href="#" class="btn btn--green">Discover All Tours</a>
+          <a href="#section-tours" class="btn btn--green">Discover All Tours</a>
         </div>
 
       </section>
@@ -281,21 +289,46 @@
         </div>
 
       </section>
-      <section class="section-book">
+      <section class="section-book" id="section-book">
         <div class="row">
           <div class="book">
             <div class="book__form">
+
               <form action="#" class="form">
                 <div class="u-margin-bottom-medium">
-                  <h2 class="heading-secondary">Book now!</h2>
+                  <h2 class="heading-secondary">Start Booking now!</h2>
                 </div>
+
                 <div class="form__group">
                   <input type="text" class="form__input" id="name" placeholder="Full name" required>
                   <label class="form__label" for="name">Full Name</label> 
                 </div>
+
                 <div class="form__group">
                   <input type="email" class="form__input" id="email" placeholder="Email" required>
                   <label class="form__label" for="email">Email</label> 
+                </div>
+
+                <div class="form__group u-margin-bottom-medium">
+                  <div class="form__radio-group">
+                    <input type="radio" class="form__radio-input" id="small" name="size">
+                    <label for="small" class="form__radio-label">
+                      <span class="form__radio-button"></span>
+                      Small tour group
+                    </label>
+                  </div>
+
+                  <div class="form__radio-group">
+                    <input type="radio" class="form__radio-input" id="large" name="size">
+                    <label for="large" class="form__radio-label">
+                      <span class="form__radio-button"></span>
+                      Large tour group
+                    </label>
+                  </div>
+                </div>
+
+                <div class="form__group">
+                  <button type="submit" class="btn btn--green">Next Step &rarr;</button>
                 </div>
               </form>
             </div>
@@ -303,6 +336,51 @@
         </div>
       </section>
     </main>
+
+    <footer class="footer">
+      <div class="footer__logo-box">
+        <img src="./assets/images/logo-green-2x.png" alt="Full logo" class="footer__logo">
+      </div>
+      <div class="row">
+        <div class="col-1-of-2">
+          <div class="footer__navigation">
+            <ul class="footer__list">
+              <li class="footer__item"><a href="" class="footer__link">Company</a></li>
+              <li class="footer__item"><a href="" class="footer__link">Contact us</a></li>
+              <li class="footer__item"><a href="" class="footer__link">Careers</a></li>
+              <li class="footer__item"><a href="" class="footer__link">Privacy policy</a></li>
+              <li class="footer__item"><a href="" class="footer__link">Terms</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-1-of-2">
+          <p class="footer__copyright">
+            Built while learning  <a href="" class="footer__link">&nbsp; ADVANCED CSS AND SASS. &nbsp;</a> The design of this website is credited to  
+            <a href="" class="footer__link">Jonas Schmedtmann.</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <div class="popup" id="popup">
+      <div class="popup__content">
+        <div class="popup__left">
+          <img src="./assets/images/nat-8.jpg" alt="Tour photo" class="popup__img">
+          <img src="./assets/images/nat-9.jpg" alt="Tour photo" class="popup__img">
+        </div>
+        <div class="popup__right">
+          <a href="#section-tours" class="popup__close">&times;</a>
+          <h2 class="heading-secondary u-margin-bottom-small">Start Booking now</h2>
+          <h3 class="heading-tertiary u-margin-bottom-small">Important &ndash; Please read these terms before booking</h3>
+          <p class="popup__text">
+            Before I started my own adventure travel blog 10 years ago, I was inspired to explore the world after reading other people’s travel blogs online. Travel blogs are a wonderful source for cool ideas & advice if you’re planning a trip!
+            Below you’ll find some of my favorite travel blogs, plus many more I’ve discovered over the years. I hope you enjoy the variety of travel stories, photography, and videos these travel bloggers publish from around the world!
+          </p>
+          <a href="" class="btn btn--green">Book Now</a>
+        </div>
+      </div>
+    </div>
 
     <!--
     <div class="grid-test">

@@ -1,5 +1,5 @@
 {
-  "name": "A tour website",
+  "name": "tour-website",
   "version": "1.0.0",
   "description": "A tour website using Sass",
   "main": "index.js",

@@ -9,6 +9,7 @@
   background-size: cover;
   background-position: top;
   position: relative;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 
   &__logo-box {
@@ -18,19 +19,7 @@
   }
 
   &__logo {
-    color: $color-white;
-    font-weight: 700;
-    font-size: 1.6rem;
-    letter-spacing: 0.5rem;
-    background-color: $color-grey-dark;
-    padding: 2rem 5rem;
-    height: 10rem;
-    clip-path: polygon(0 50%, 50% 0, 100% 50%, 50% 100%);
-    .first-name,
-    .last-name {
-      display: block;
-      text-align: center;
-    }
+    height: 3.5rem;
   }
 
   &__text-box {
