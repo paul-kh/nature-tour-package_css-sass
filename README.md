@@ -1,4 +1,4 @@
-Live site: https://paul-kh.github.io/tour-site_css-sass/
+Live site: https://paul-kh.github.io/nature-tour-package_css-sass/
 
 A website template about nature tour packages.
 
