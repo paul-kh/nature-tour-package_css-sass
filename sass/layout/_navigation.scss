@@ -15,6 +15,11 @@
     box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
     cursor: pointer;
     text-align: center;
+
+    @include respond(tab-port) {
+      top: 4rem;
+      right: 4rem;
+    }
   }
 
   &__background {
@@ -30,6 +35,11 @@
     );
     z-index: 1000;
     transition: transform 0.6s;
+
+    @include respond(tab-port) {
+      top: 4.5rem;
+      right: 4.5rem;
+    }
   }
 
   &--hide {
